@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8245C4702B77E90D00410252 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8245C46F2B77E90D00410252 /* Recipe.swift */; };
+		829367A82B77EC2E0098D95A /* SearchRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829367A62B77EC2E0098D95A /* SearchRecipeViewController.swift */; };
+		829367A92B77EC2E0098D95A /* SearchRecipeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 829367A72B77EC2E0098D95A /* SearchRecipeViewController.xib */; };
+		829367AD2B77EDE90098D95A /* DetailRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829367AB2B77EDE90098D95A /* DetailRecipeViewController.swift */; };
+		829367AE2B77EDE90098D95A /* DetailRecipeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 829367AC2B77EDE90098D95A /* DetailRecipeViewController.xib */; };
+		829367B22B78BE4C0098D95A /* SearchRecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829367B02B78BE4C0098D95A /* SearchRecipeTableViewCell.swift */; };
+		829367B32B78BE4C0098D95A /* SearchRecipeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 829367B12B78BE4C0098D95A /* SearchRecipeTableViewCell.xib */; };
+		829367B52B78BF730098D95A /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829367B42B78BF730098D95A /* Ingredient.swift */; };
+		829367B72B78BFB20098D95A /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829367B62B78BFB20098D95A /* Favorite.swift */; };
+		829367BA2B78BFDF0098D95A /* AlreadyCook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829367B92B78BFDF0098D95A /* AlreadyCook.swift */; };
+		829367BC2B78C0140098D95A /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829367BB2B78C0140098D95A /* Meal.swift */; };
+		829367C32B78DC7B0098D95A /* DetailRecipeIngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829367C12B78DC7B0098D95A /* DetailRecipeIngredientTableViewCell.swift */; };
+		829367C42B78DC7B0098D95A /* DetailRecipeIngredientTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 829367C22B78DC7B0098D95A /* DetailRecipeIngredientTableViewCell.xib */; };
+		EC1635A42B64FFE1006991BA /* ParseUserCreationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1635A32B64FFE1006991BA /* ParseUserCreationError.swift */; };
+		EC33E8D12B35FD950077A167 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC33E8D02B35FD950077A167 /* AppDelegate.swift */; };
+		EC33E8DA2B35FD970077A167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC33E8D92B35FD970077A167 /* Assets.xcassets */; };
+		EC33E8DD2B35FD970077A167 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC33E8DB2B35FD970077A167 /* LaunchScreen.storyboard */; };
+		EC33E8E62B35FE0F0077A167 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC33E8E42B35FE0F0077A167 /* HomeViewController.swift */; };
+		EC33E8E72B35FE0F0077A167 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC33E8E52B35FE0F0077A167 /* HomeViewController.xib */; };
+		EC33E8EA2B3608060077A167 /* InscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC33E8E82B3608060077A167 /* InscriptionViewController.swift */; };
+		EC33E8EB2B3608060077A167 /* InscriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC33E8E92B3608060077A167 /* InscriptionViewController.xib */; };
+		EC4155FA2B83CC570042ECA8 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4155F82B83CC570042ECA8 /* HomePageViewController.swift */; };
+		EC4155FB2B83CC570042ECA8 /* HomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC4155F92B83CC570042ECA8 /* HomePageViewController.xib */; };
+		EC4155FE2B83CCE20042ECA8 /* PostNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4155FC2B83CCE20042ECA8 /* PostNoteViewController.swift */; };
+		EC4155FF2B83CCE20042ECA8 /* PostNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC4155FD2B83CCE20042ECA8 /* PostNoteViewController.xib */; };
+		EC4156022B83E47E0042ECA8 /* PatchNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4156002B83E47E0042ECA8 /* PatchNoteViewController.swift */; };
+		EC4156032B83E47E0042ECA8 /* PatchNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC4156012B83E47E0042ECA8 /* PatchNoteViewController.xib */; };
+		ECA0E0532B7A86DC00509F5B /* GetUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0E0512B7A86DC00509F5B /* GetUserViewController.swift */; };
+		ECA0E0542B7A86DC00509F5B /* GetUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECA0E0522B7A86DC00509F5B /* GetUserViewController.xib */; };
+		ECA0E0572B7A987300509F5B /* PatchUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0E0552B7A987300509F5B /* PatchUserViewController.swift */; };
+		ECA0E0582B7A987300509F5B /* PatchUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECA0E0562B7A987300509F5B /* PatchUserViewController.xib */; };
+		ECCBFAEE2B80B41600FC2EC1 /* GetNoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCBFAEC2B80B41600FC2EC1 /* GetNoteTableViewCell.swift */; };
+		ECCBFAEF2B80B41600FC2EC1 /* GetNoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECCBFAED2B80B41600FC2EC1 /* GetNoteTableViewCell.xib */; };
+		ECCBFAF42B80B4D800FC2EC1 /* UserNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCBFAF22B80B4D800FC2EC1 /* UserNoteViewController.swift */; };
+		ECCBFAF52B80B4D800FC2EC1 /* UserNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECCBFAF32B80B4D800FC2EC1 /* UserNoteViewController.xib */; };
+		ECCBFAF72B80B58600FC2EC1 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCBFAF62B80B58600FC2EC1 /* Notes.swift */; };
+		ECF9ACCC2B85004D008B14AB /* HomePageViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECF9ACCB2B85004D008B14AB /* HomePageViewController~ipad.xib */; };
+		ECF9ACCE2B85015F008B14AB /* PostNoteViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECF9ACCD2B85015F008B14AB /* PostNoteViewController~ipad.xib */; };
+		ECF9ACD02B850276008B14AB /* PatchNoteViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECF9ACCF2B850276008B14AB /* PatchNoteViewController~ipad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8245C46F2B77E90D00410252 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		829367A62B77EC2E0098D95A /* SearchRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeViewController.swift; sourceTree = "<group>"; };
+		829367A72B77EC2E0098D95A /* SearchRecipeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchRecipeViewController.xib; sourceTree = "<group>"; };
+		829367AB2B77EDE90098D95A /* DetailRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecipeViewController.swift; sourceTree = "<group>"; };
+		829367AC2B77EDE90098D95A /* DetailRecipeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailRecipeViewController.xib; sourceTree = "<group>"; };
+		829367B02B78BE4C0098D95A /* SearchRecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeTableViewCell.swift; sourceTree = "<group>"; };
+		829367B12B78BE4C0098D95A /* SearchRecipeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchRecipeTableViewCell.xib; sourceTree = "<group>"; };
+		829367B42B78BF730098D95A /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		829367B62B78BFB20098D95A /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
+		829367B92B78BFDF0098D95A /* AlreadyCook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlreadyCook.swift; sourceTree = "<group>"; };
+		829367BB2B78C0140098D95A /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		829367C12B78DC7B0098D95A /* DetailRecipeIngredientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecipeIngredientTableViewCell.swift; sourceTree = "<group>"; };
+		829367C22B78DC7B0098D95A /* DetailRecipeIngredientTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailRecipeIngredientTableViewCell.xib; sourceTree = "<group>"; };
+		EC1635A32B64FFE1006991BA /* ParseUserCreationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseUserCreationError.swift; sourceTree = "<group>"; };
+		EC33E8CD2B35FD950077A167 /* iosFrontApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosFrontApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC33E8D02B35FD950077A167 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC33E8D92B35FD970077A167 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC33E8DC2B35FD970077A167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC33E8DE2B35FD970077A167 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC33E8E42B35FE0F0077A167 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EC33E8E52B35FE0F0077A167 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		EC33E8E82B3608060077A167 /* InscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscriptionViewController.swift; sourceTree = "<group>"; };
+		EC33E8E92B3608060077A167 /* InscriptionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InscriptionViewController.xib; sourceTree = "<group>"; };
+		EC4155F82B83CC570042ECA8 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		EC4155F92B83CC570042ECA8 /* HomePageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageViewController.xib; sourceTree = "<group>"; };
+		EC4155FC2B83CCE20042ECA8 /* PostNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostNoteViewController.swift; sourceTree = "<group>"; };
+		EC4155FD2B83CCE20042ECA8 /* PostNoteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostNoteViewController.xib; sourceTree = "<group>"; };
+		EC4156002B83E47E0042ECA8 /* PatchNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchNoteViewController.swift; sourceTree = "<group>"; };
+		EC4156012B83E47E0042ECA8 /* PatchNoteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PatchNoteViewController.xib; sourceTree = "<group>"; };
+		ECA0E0512B7A86DC00509F5B /* GetUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserViewController.swift; sourceTree = "<group>"; };
+		ECA0E0522B7A86DC00509F5B /* GetUserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GetUserViewController.xib; sourceTree = "<group>"; };
+		ECA0E0552B7A987300509F5B /* PatchUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchUserViewController.swift; sourceTree = "<group>"; };
+		ECA0E0562B7A987300509F5B /* PatchUserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PatchUserViewController.xib; sourceTree = "<group>"; };
+		ECCBFAEC2B80B41600FC2EC1 /* GetNoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GetNoteTableViewCell.swift; path = iosFrontApp/GetNoteTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		ECCBFAED2B80B41600FC2EC1 /* GetNoteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GetNoteTableViewCell.xib; path = iosFrontApp/GetNoteTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		ECCBFAF22B80B4D800FC2EC1 /* UserNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNoteViewController.swift; sourceTree = "<group>"; };
+		ECCBFAF32B80B4D800FC2EC1 /* UserNoteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserNoteViewController.xib; sourceTree = "<group>"; };
+		ECCBFAF62B80B58600FC2EC1 /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		ECF9ACCB2B85004D008B14AB /* HomePageViewController~ipad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "HomePageViewController~ipad.xib"; sourceTree = "<group>"; };
+		ECF9ACCD2B85015F008B14AB /* PostNoteViewController~ipad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "PostNoteViewController~ipad.xib"; sourceTree = "<group>"; };
+		ECF9ACCF2B850276008B14AB /* PatchNoteViewController~ipad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "PatchNoteViewController~ipad.xib"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC33E8CA2B35FD950077A167 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8245C46E2B77E8E000410252 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8245C46F2B77E90D00410252 /* Recipe.swift */,
+				829367B42B78BF730098D95A /* Ingredient.swift */,
+				829367B62B78BFB20098D95A /* Favorite.swift */,
+				829367B92B78BFDF0098D95A /* AlreadyCook.swift */,
+				829367BB2B78C0140098D95A /* Meal.swift */,
+				ECCBFAF62B80B58600FC2EC1 /* Notes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		829367A52B77EBE20098D95A /* SearchRecipe */ = {
+			isa = PBXGroup;
+			children = (
+				829367AF2B78BE020098D95A /* SearchRecipeTableCell */,
+				829367A62B77EC2E0098D95A /* SearchRecipeViewController.swift */,
+				829367A72B77EC2E0098D95A /* SearchRecipeViewController.xib */,
+			);
+			path = SearchRecipe;
+			sourceTree = "<group>";
+		};
+		829367AA2B77EDD10098D95A /* DetailRecipe */ = {
+			isa = PBXGroup;
+			children = (
+				829367C02B78DC5D0098D95A /* DetailRecipeInredientTableViewCell */,
+				829367AB2B77EDE90098D95A /* DetailRecipeViewController.swift */,
+				829367AC2B77EDE90098D95A /* DetailRecipeViewController.xib */,
+			);
+			path = DetailRecipe;
+			sourceTree = "<group>";
+		};
+		829367AF2B78BE020098D95A /* SearchRecipeTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				829367B02B78BE4C0098D95A /* SearchRecipeTableViewCell.swift */,
+				829367B12B78BE4C0098D95A /* SearchRecipeTableViewCell.xib */,
+			);
+			path = SearchRecipeTableCell;
+			sourceTree = "<group>";
+		};
+		829367C02B78DC5D0098D95A /* DetailRecipeInredientTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				829367C12B78DC7B0098D95A /* DetailRecipeIngredientTableViewCell.swift */,
+				829367C22B78DC7B0098D95A /* DetailRecipeIngredientTableViewCell.xib */,
+			);
+			path = DetailRecipeInredientTableViewCell;
+			sourceTree = "<group>";
+		};
+		EC33E8C42B35FD950077A167 = {
+			isa = PBXGroup;
+			children = (
+				EC33E8CF2B35FD950077A167 /* iosFrontApp */,
+				EC33E8CE2B35FD950077A167 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC33E8CE2B35FD950077A167 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC33E8CD2B35FD950077A167 /* iosFrontApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC33E8CF2B35FD950077A167 /* iosFrontApp */ = {
+			isa = PBXGroup;
+			children = (
+				829367AA2B77EDD10098D95A /* DetailRecipe */,
+				829367A52B77EBE20098D95A /* SearchRecipe */,
+				8245C46E2B77E8E000410252 /* Models */,
+				EC33E8D02B35FD950077A167 /* AppDelegate.swift */,
+				EC4156002B83E47E0042ECA8 /* PatchNoteViewController.swift */,
+				EC4156012B83E47E0042ECA8 /* PatchNoteViewController.xib */,
+				ECF9ACCF2B850276008B14AB /* PatchNoteViewController~ipad.xib */,
+				EC4155FC2B83CCE20042ECA8 /* PostNoteViewController.swift */,
+				EC4155FD2B83CCE20042ECA8 /* PostNoteViewController.xib */,
+				ECF9ACCD2B85015F008B14AB /* PostNoteViewController~ipad.xib */,
+				EC4155F82B83CC570042ECA8 /* HomePageViewController.swift */,
+				EC4155F92B83CC570042ECA8 /* HomePageViewController.xib */,
+				ECF9ACCB2B85004D008B14AB /* HomePageViewController~ipad.xib */,
+				EC33E8D92B35FD970077A167 /* Assets.xcassets */,
+				EC33E8DB2B35FD970077A167 /* LaunchScreen.storyboard */,
+				EC33E8DE2B35FD970077A167 /* Info.plist */,
+				EC33E8E42B35FE0F0077A167 /* HomeViewController.swift */,
+				ECCBFAF22B80B4D800FC2EC1 /* UserNoteViewController.swift */,
+				ECCBFAF32B80B4D800FC2EC1 /* UserNoteViewController.xib */,
+				EC33E8E52B35FE0F0077A167 /* HomeViewController.xib */,
+				EC33E8E82B3608060077A167 /* InscriptionViewController.swift */,
+				EC1635A32B64FFE1006991BA /* ParseUserCreationError.swift */,
+				EC33E8E92B3608060077A167 /* InscriptionViewController.xib */,
+				ECA0E0512B7A86DC00509F5B /* GetUserViewController.swift */,
+				ECA0E0552B7A987300509F5B /* PatchUserViewController.swift */,
+				ECA0E0562B7A987300509F5B /* PatchUserViewController.xib */,
+				ECA0E0522B7A86DC00509F5B /* GetUserViewController.xib */,
+				ECCBFAEC2B80B41600FC2EC1 /* GetNoteTableViewCell.swift */,
+				ECCBFAED2B80B41600FC2EC1 /* GetNoteTableViewCell.xib */,
+			);
+			path = iosFrontApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC33E8CC2B35FD950077A167 /* iosFrontApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC33E8E12B35FD970077A167 /* Build configuration list for PBXNativeTarget "iosFrontApp" */;
+			buildPhases = (
+				EC33E8C92B35FD950077A167 /* Sources */,
+				EC33E8CA2B35FD950077A167 /* Frameworks */,
+				EC33E8CB2B35FD950077A167 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iosFrontApp;
+			productName = iosFrontApp;
+			productReference = EC33E8CD2B35FD950077A167 /* iosFrontApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC33E8C52B35FD950077A167 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					EC33E8CC2B35FD950077A167 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = EC33E8C82B35FD950077A167 /* Build configuration list for PBXProject "iosFrontApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC33E8C42B35FD950077A167;
+			productRefGroup = EC33E8CE2B35FD950077A167 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC33E8CC2B35FD950077A167 /* iosFrontApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC33E8CB2B35FD950077A167 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF9ACD02B850276008B14AB /* PatchNoteViewController~ipad.xib in Resources */,
+				829367A92B77EC2E0098D95A /* SearchRecipeViewController.xib in Resources */,
+				ECF9ACCC2B85004D008B14AB /* HomePageViewController~ipad.xib in Resources */,
+				829367C42B78DC7B0098D95A /* DetailRecipeIngredientTableViewCell.xib in Resources */,
+				ECF9ACCE2B85015F008B14AB /* PostNoteViewController~ipad.xib in Resources */,
+				EC4156032B83E47E0042ECA8 /* PatchNoteViewController.xib in Resources */,
+				ECCBFAEF2B80B41600FC2EC1 /* GetNoteTableViewCell.xib in Resources */,
+				ECCBFAF52B80B4D800FC2EC1 /* UserNoteViewController.xib in Resources */,
+				EC33E8DD2B35FD970077A167 /* LaunchScreen.storyboard in Resources */,
+				EC33E8DA2B35FD970077A167 /* Assets.xcassets in Resources */,
+				829367AE2B77EDE90098D95A /* DetailRecipeViewController.xib in Resources */,
+				EC4155FB2B83CC570042ECA8 /* HomePageViewController.xib in Resources */,
+				EC4155FF2B83CCE20042ECA8 /* PostNoteViewController.xib in Resources */,
+				EC33E8E72B35FE0F0077A167 /* HomeViewController.xib in Resources */,
+				EC33E8EB2B3608060077A167 /* InscriptionViewController.xib in Resources */,
+				ECA0E0582B7A987300509F5B /* PatchUserViewController.xib in Resources */,
+				ECA0E0542B7A86DC00509F5B /* GetUserViewController.xib in Resources */,
+				829367B32B78BE4C0098D95A /* SearchRecipeTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC33E8C92B35FD950077A167 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				829367C32B78DC7B0098D95A /* DetailRecipeIngredientTableViewCell.swift in Sources */,
+				EC33E8D12B35FD950077A167 /* AppDelegate.swift in Sources */,
+				829367BC2B78C0140098D95A /* Meal.swift in Sources */,
+				829367B52B78BF730098D95A /* Ingredient.swift in Sources */,
+				829367AD2B77EDE90098D95A /* DetailRecipeViewController.swift in Sources */,
+				ECCBFAF72B80B58600FC2EC1 /* Notes.swift in Sources */,
+				ECA0E0572B7A987300509F5B /* PatchUserViewController.swift in Sources */,
+				ECA0E0532B7A86DC00509F5B /* GetUserViewController.swift in Sources */,
+				EC33E8E62B35FE0F0077A167 /* HomeViewController.swift in Sources */,
+				8245C4702B77E90D00410252 /* Recipe.swift in Sources */,
+				829367B72B78BFB20098D95A /* Favorite.swift in Sources */,
+				EC1635A42B64FFE1006991BA /* ParseUserCreationError.swift in Sources */,
+				829367A82B77EC2E0098D95A /* SearchRecipeViewController.swift in Sources */,
+				ECCBFAF42B80B4D800FC2EC1 /* UserNoteViewController.swift in Sources */,
+				EC33E8EA2B3608060077A167 /* InscriptionViewController.swift in Sources */,
+				829367BA2B78BFDF0098D95A /* AlreadyCook.swift in Sources */,
+				EC4156022B83E47E0042ECA8 /* PatchNoteViewController.swift in Sources */,
+				ECCBFAEE2B80B41600FC2EC1 /* GetNoteTableViewCell.swift in Sources */,
+				829367B22B78BE4C0098D95A /* SearchRecipeTableViewCell.swift in Sources */,
+				EC4155FE2B83CCE20042ECA8 /* PostNoteViewController.swift in Sources */,
+				EC4155FA2B83CC570042ECA8 /* HomePageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EC33E8DB2B35FD970077A167 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC33E8DC2B35FD970077A167 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC33E8DF2B35FD970077A167 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC33E8E02B35FD970077A167 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC33E8E22B35FD970077A167 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iosFrontApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esgi.iosFrontApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC33E8E32B35FD970077A167 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iosFrontApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esgi.iosFrontApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC33E8C82B35FD950077A167 /* Build configuration list for PBXProject "iosFrontApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC33E8DF2B35FD970077A167 /* Debug */,
+				EC33E8E02B35FD970077A167 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC33E8E12B35FD970077A167 /* Build configuration list for PBXNativeTarget "iosFrontApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC33E8E22B35FD970077A167 /* Debug */,
+				EC33E8E32B35FD970077A167 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC33E8C52B35FD950077A167 /* Project object */;
+}

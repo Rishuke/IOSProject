@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RECIPE_CELL_ID" rowHeight="64" id="KGk-i7-Jjw" customClass="SearchRecipeTableViewCell" customModule="iosFrontApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="En2-A3-7qU">
+                        <rect key="frame" x="10" y="11" width="73" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="41h-67-4JQ"/>
+                            <constraint firstAttribute="width" constant="73" id="SeA-0f-XN3"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhc-Fb-s7X">
+                        <rect key="frame" x="93" y="10" width="89" height="44"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="En2-A3-7qU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="S82-9W-x6f"/>
+                    <constraint firstItem="xhc-Fb-s7X" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="fLk-vE-51L"/>
+                    <constraint firstItem="xhc-Fb-s7X" firstAttribute="leading" secondItem="En2-A3-7qU" secondAttribute="trailing" constant="10" id="pci-uI-Jhx"/>
+                    <constraint firstItem="En2-A3-7qU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="tqs-Kt-1OI"/>
+                    <constraint firstAttribute="bottom" secondItem="xhc-Fb-s7X" secondAttribute="bottom" constant="10" id="za7-GF-e0p"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageCell" destination="En2-A3-7qU" id="2mh-t0-q0N"/>
+                <outlet property="recipeTitleLabel" destination="xhc-Fb-s7X" id="GHm-Ty-A64"/>
+            </connections>
+            <point key="canvasLocation" x="25.954198473282442" y="26.760563380281692"/>
+        </tableViewCell>
+    </objects>
+</document>
